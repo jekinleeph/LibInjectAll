@@ -1,0 +1,2 @@
+目前arm64的手机应该都是Android 5.0+的，可能会因selinux的权限控制造成注入失败，比如例子中的system_server会失败，但注入calendar没问题。
+此时可以暂时关闭掉selinux（执行setenforce 0），要针对解决就需要配置selinux了。
